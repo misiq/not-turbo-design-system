@@ -1,0 +1,30 @@
+{
+	"name": "@michalbaran/button",
+	"version": "1.0.1",
+	"description": "",
+	"main": "./dist/index.js",
+	"module": "./dist/index.mjs",
+	"types": "./dist/index.d.ts",
+	"keywords": [],
+	"author": "Michal Baran",
+	"license": "ISC",
+	"sideEffects": false,
+	"devDependencies": {
+		"@types/react": "^18.2.21",
+		"@types/react-dom": "^18.2.7",
+		"react": "^18.2.0",
+		"tsup": "^7.2.0",
+		"typescript": "^5.2.2"
+	},
+	"scripts": {
+		"build": "tsup src/index.ts --format esm,cjs --dts --external react",
+		"dev": "tsup src/index.ts --format esm,cjs --watch --dts --external react",
+		"clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+	},
+	"files": [
+		"dist/**"
+	],
+	"publishConfig": {
+		"access": "public"
+	}
+}
