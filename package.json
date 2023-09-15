@@ -6,10 +6,11 @@
 		"lint": "turbo run lint",
 		"clean": "turbo run clean && rm -rf node_modules",
 		"format": "prettier --write \"**/*.{ts,tsx,md}\"",
-		"generate": "turbo gen workspace"
+		"generate": "turbo gen component"
 	},
 	"devDependencies": {
 		"@changesets/cli": "^2.26.2",
+		"@turbo/gen": "^1.10.13",
 		"eslint": "^8.49.0",
 		"husky": "^8.0.3",
 		"lint-staged": "^14.0.1",
